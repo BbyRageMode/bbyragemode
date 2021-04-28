@@ -10,6 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .greeting-box {
@@ -17,7 +18,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .backgraund-box {
@@ -48,8 +49,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-width: 343px;
+  justify-content: space-between;
+  width: 300px;
+  max-width: 343px;
+  .w-forms[data-error] .pass-form {
+    border: 1px solid #fb7181;
+    border-radius: 5px;
+    color: #fb7181;
+  }
+
+  .form {
+    width: 300px;
+  }
 
   & input {
     outline: none;
@@ -72,11 +83,22 @@ body {
     &.email-form {
       background: url(/img/Welcome/W_email.svg) no-repeat;
       background-position: left 18px top 50%;
+      // &:invalid {
+      //   border: 1px solid #fb7181;
+      //   border-radius: 5px;
+      //   background: url(/img/Welcome/W_red-email.svg) no-repeat;
+      //   background-position: left 18px top 50%;
+      //   &:focus {
+      //     background: url(/img/Welcome/W_red-email.svg) no-repeat;
+      //     background-position: left 18px top 50%;
+      //   }
+      // }
       &:focus {
         background: url(/img/Welcome/W_blue-email.svg) no-repeat;
         background-position: left 18px top 50%;
       }
     }
+
     &.pass-form {
       background: url(/img/Welcome/W_pass.svg) no-repeat;
       background-position: left 18px top 50%;
@@ -85,12 +107,23 @@ body {
         background-position: left 18px top 50%;
       }
     }
+    //Register page ============================
+
+    &.name-form {
+      background: url(/img/Welcome/R_name.svg) no-repeat;
+      background-position: left 18px top 50%;
+      &:focus {
+        background: url(/img/Welcome/R_blue-name.svg) no-repeat;
+        background-position: left 18px top 50%;
+      }
+    }
   }
 
-  .w-signIn-btn {
+  .w-sign-btn {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     width: 100%;
     margin-top: 8px;
     margin-bottom: 21px;
@@ -110,7 +143,7 @@ body {
     justify-content: center;
     text-align: center;
     margin-bottom: 8px;
-    position: relative;
+    overflow: hidden;
 
     & span {
       display: flex;
@@ -133,10 +166,10 @@ body {
         background-color: #ebf0ff;
       }
       &::before {
-        margin-right: 25px;
+        margin-right: 20px;
       }
       &::after {
-        margin-left: 25px;
+        margin-left: 20px;
       }
     }
   }
@@ -206,5 +239,66 @@ body {
 
   & .fargot-pass {
     margin: 8px 0;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  border-bottom: 1px solid #ebf0ff;
+  padding: 16px;
+
+  & .header__search {
+    & .search {
+      border: 1px solid #ebf0ff;
+      border-radius: 5px;
+      background: url(/img/Welcome/Header/Main_page/Search.svg) no-repeat;
+      background-position: 14px;
+      padding: 12px 16px 12px 40px;
+      font-size: 12px;
+      line-height: 180%;
+    }
+  }
+  & .header__actions {
+    margin-left: 8px;
+    height: 47px;
+    & .top_nav {
+      display: flex;
+      height: 100%;
+
+      & .top_nav__item {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 0 8px;
+      }
+    }
+  }
+  & .itemBtn {
+    position: relative;
+    & .itemBtn__follow {
+      width: 24px;
+      height: 24px;
+      background: url(/img/Welcome/Header/Main_page/Follow.svg) no-repeat center;
+    }
+    & .itemBtn__notofiCount {
+      border-radius: 12px;
+      background-color: #fb7181;
+      width: 8px;
+      height: 8px;
+      position: absolute;
+      top: 2px;
+      right: 0px;
+      display: none;
+    }
+    & .itemBnt__notification {
+      width: 24px;
+      height: 24px;
+      background: url(/img/Welcome/Header/Main_page/Notification.svg) no-repeat
+        center;
+    }
   }
 }

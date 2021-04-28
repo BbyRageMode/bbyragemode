@@ -103,6 +103,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .greeting-box {
@@ -119,7 +122,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .backgraund-box {
@@ -163,10 +166,21 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  min-width: 343px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 300px;
+  max-width: 343px;
+}
+
+.w-forms .w-forms[data-error] .pass-form {
+  border: 1px solid #fb7181;
+  border-radius: 5px;
+  color: #fb7181;
+}
+
+.w-forms .form {
+  width: 300px;
 }
 
 .w-forms input {
@@ -210,7 +224,17 @@ body {
   background-position: left 18px top 50%;
 }
 
-.w-forms .w-signIn-btn {
+.w-forms input.name-form {
+  background: url(/img/Welcome/R_name.svg) no-repeat;
+  background-position: left 18px top 50%;
+}
+
+.w-forms input.name-form:focus {
+  background: url(/img/Welcome/R_blue-name.svg) no-repeat;
+  background-position: left 18px top 50%;
+}
+
+.w-forms .w-sign-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -220,6 +244,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: pointer;
   width: 100%;
   margin-top: 8px;
   margin-bottom: 21px;
@@ -246,7 +271,7 @@ body {
           justify-content: center;
   text-align: center;
   margin-bottom: 8px;
-  position: relative;
+  overflow: hidden;
 }
 
 .w-forms .separation span {
@@ -275,11 +300,11 @@ body {
 }
 
 .w-forms .separation span::before {
-  margin-right: 25px;
+  margin-right: 20px;
 }
 
 .w-forms .separation span::after {
-  margin-left: 25px;
+  margin-left: 20px;
 }
 
 .alternative-login {
@@ -372,4 +397,79 @@ body {
 
 .footer-link .fargot-pass {
   margin: 8px 0;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #ebf0ff;
+  padding: 16px;
+}
+
+.header .header__search .search {
+  border: 1px solid #ebf0ff;
+  border-radius: 5px;
+  background: url(/img/Welcome/Header/Main_page/Search.svg) no-repeat;
+  background-position: 14px;
+  padding: 12px 16px 12px 40px;
+  font-size: 12px;
+  line-height: 180%;
+}
+
+.header .header__actions {
+  margin-left: 8px;
+  height: 47px;
+}
+
+.header .header__actions .top_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.header .header__actions .top_nav .top_nav__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 0 8px;
+}
+
+.header .itemBtn {
+  position: relative;
+}
+
+.header .itemBtn .itemBtn__follow {
+  width: 24px;
+  height: 24px;
+  background: url(/img/Welcome/Header/Main_page/Follow.svg) no-repeat center;
+}
+
+.header .itemBtn .itemBtn__notofiCount {
+  border-radius: 12px;
+  background-color: #fb7181;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 2px;
+  right: 0px;
+  display: none;
+}
+
+.header .itemBtn .itemBnt__notification {
+  width: 24px;
+  height: 24px;
+  background: url(/img/Welcome/Header/Main_page/Notification.svg) no-repeat center;
 }

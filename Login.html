@@ -17,42 +17,48 @@
   </head>
   <body>
     <div class="container">
-      <div class="greeting-box">
-        <div class="backgraund-box">
-          <svg
-            width="32"
-            height="32"
-            viewBox="0 0 32 32"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M30.8284 13.1716C32.3905 14.7337 32.3905 17.2663 30.8284 18.8284L18.8284 30.8284C17.2663 32.3905 14.7337 32.3905 13.1716 30.8284L1.17157 18.8284C-0.390523 17.2663 -0.390523 14.7337 1.17157 13.1716L13.1716 1.17157C14.7337 -0.390525 17.2663 -0.390525 18.8284 1.17157L30.8284 13.1716ZM16 9.65685L9.65686 16L16 22.3431L22.3431 16L16 9.65685Z"
-              fill="white"
-            />
-          </svg>
+      <form class="w-forms">
+        <div class="greeting-box">
+          <div class="backgraund-box">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M30.8284 13.1716C32.3905 14.7337 32.3905 17.2663 30.8284 18.8284L18.8284 30.8284C17.2663 32.3905 14.7337 32.3905 13.1716 30.8284L1.17157 18.8284C-0.390523 17.2663 -0.390523 14.7337 1.17157 13.1716L13.1716 1.17157C14.7337 -0.390525 17.2663 -0.390525 18.8284 1.17157L30.8284 13.1716ZM16 9.65685L9.65686 16L16 22.3431L22.3431 16L16 9.65685Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div class="greeting__title">Welcome to Lafyuu</div>
+          <div class="greeting__subtitle">Sign in to continue</div>
         </div>
-        <div class="greeting__title">Welcome to Lafyuu</div>
-        <div class="greeting__subtitle">Sign in to continue</div>
-      </div>
-      <div class="w-forms">
-        <input
-          class="email-form"
-          type="text"
-          placeholder="Your Email"
-          required
-        />
+        <label class="form">
+          <input
+            class="email-form"
+            type="text"
+            placeholder="Your Email"
+            required
+          />
+          <span></span>
+        </label>
 
-        <input
-          class="pass-form"
-          type="password"
-          placeholder="Password"
-          required
-        />
+        <label class="form">
+          <input
+            class="pass-form"
+            type="password"
+            placeholder="Password"
+            required
+          />
+          <span></span>
+        </label>
 
-        <a class="w-signIn-btn">Sign In</a>
+        <button href="#" class="w-sign-btn">Sign In</button>
         <div class="separation">
           <span>or</span>
         </div>
@@ -105,10 +111,12 @@
         <div class="footer-link">
           <a href="#" class="fargot-pass">Forgot Password?</a>
           <div class="register-link">
-            <span>Don’t have a account?</span><a href="#"> Register</a>
+            <span>Don’t have a account?</span
+            ><a href="/Register.html"> Register</a>
           </div>
         </div>
-      </div>
+      </form>
     </div>
+    <script src="/js/app.js"></script>
   </body>
 </html>
