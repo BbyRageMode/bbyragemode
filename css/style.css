@@ -548,6 +548,11 @@ main {
   background: #40bfff;
 }
 
+.carousel-box .product {
+  margin: 0;
+  margin-right: 15px;
+}
+
 .carousel-box__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -638,6 +643,7 @@ main {
 }
 
 .product {
+  font-family: "Poppins", sans-serif;
   padding: 16px;
   border: 1px solid #ebf0ff;
   -webkit-box-sizing: border-box;
@@ -654,14 +660,14 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-right: 15px;
+  margin: 6px 0;
 }
 
 .product__photo {
   margin-bottom: 8px;
 }
 
-.product__photo .product__img {
+.product__img {
   width: 109px;
   height: 109px;
 }
@@ -685,10 +691,18 @@ main {
   line-height: 180%;
   letter-spacing: 0.5px;
   color: #40bfff;
-  margin-bottom: 8px;
 }
 
-.secPrice {
+.product__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.product__oldPrice {
   font-size: 10px;
   line-height: 150%;
   letter-spacing: 0.5px;
@@ -698,12 +712,16 @@ main {
   margin-right: 8px;
 }
 
-.priceDiscount {
+.product__discount {
   font-weight: 700;
   font-size: 10px;
   line-height: 150%;
   letter-spacing: 0.5px;
   color: #fb7181;
+}
+
+.product__trashImg {
+  margin-left: 11px;
 }
 
 .banner {
@@ -717,19 +735,19 @@ main {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 12px;
 }
 
 .main__product .product {
-  margin: 8px;
-  width: 155px;
+  width: 165px;
 }
 
 .main__product .product__img {
-  width: 120px;
-  height: 120px;
+  width: 133px;
+  height: 133px;
 }
 
 .bottom-menu {
@@ -814,4 +832,31 @@ main {
 
 .active .bottom-menu__icon path {
   stroke: #40bfff;
+}
+
+.header__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #223263;
+  margin-left: 12px;
 }
