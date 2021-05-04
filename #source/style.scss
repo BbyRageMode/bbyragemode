@@ -270,13 +270,13 @@ main {
     }
   }
   & .header__actions {
-    margin-left: 8px;
+    margin-left: 50px;
     height: 47px;
     & .top_nav {
       display: flex;
       height: 100%;
 
-      & .top_nav__item {
+      &__item {
         display: flex;
         align-items: center;
         text-align: center;
@@ -286,12 +286,12 @@ main {
   }
   & .itemBtn {
     position: relative;
-    & .itemBtn__follow {
+    &__follow {
       width: 24px;
       height: 24px;
       background: url(/img/Welcome/Header/Main_page/Follow.svg) no-repeat center;
     }
-    & .itemBtn__notofiCount {
+    &__notofiCount {
       border-radius: 12px;
       background-color: #fb7181;
       width: 8px;
@@ -301,7 +301,7 @@ main {
       right: 0px;
       display: none;
     }
-    & .itemBnt__notification {
+    &__notification {
       width: 24px;
       height: 24px;
       background: url(/img/Welcome/Header/Main_page/Notification.svg) no-repeat
@@ -604,5 +604,9 @@ main {
     letter-spacing: 0.5px;
     color: #223263;
     margin-left: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 193px;
   }
 }
