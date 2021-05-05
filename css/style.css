@@ -115,6 +115,7 @@ main {
 .main-container {
   padding: 0 16px;
   height: 100%;
+  width: 100%;
 }
 
 .greeting-box {
@@ -434,7 +435,6 @@ main {
 }
 
 .header .header__actions {
-  margin-left: 50px;
   height: 47px;
 }
 
@@ -456,17 +456,17 @@ main {
   padding: 0 8px;
 }
 
-.header .itemBtn {
+.itemBtn {
   position: relative;
 }
 
-.header .itemBtn__follow {
+.itemBtn__follow {
   width: 24px;
   height: 24px;
   background: url(/img/Welcome/Header/Main_page/Follow.svg) no-repeat center;
 }
 
-.header .itemBtn__notofiCount {
+.itemBtn__notofiCount {
   border-radius: 12px;
   background-color: #fb7181;
   width: 8px;
@@ -477,7 +477,7 @@ main {
   display: none;
 }
 
-.header .itemBtn__notification {
+.itemBtn__notification {
   width: 24px;
   height: 24px;
   background: url(/img/Welcome/Header/Main_page/Notification.svg) no-repeat center;
@@ -505,6 +505,68 @@ main {
   height: 206px;
   border-radius: 5px;
   padding: 32px 0 0 24px;
+}
+
+.fullProduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.fullProduct__title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fullProduct__follow {
+  margin-top: 2px;
+}
+
+.fullProduct__name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #223263;
+}
+
+.fullProduct__rating {
+  margin-top: 8px;
+}
+
+.fullProduct__price {
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  /* identical to box height, or 30px */
+  letter-spacing: 0.5px;
+  /* Primary/Blue */
+  color: #40bfff;
+}
+
+.product-carousel {
+  margin-bottom: 16px;
+}
+
+.product-carousel__photo {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-73.06%, #000000), to(rgba(0, 0, 0, 0))), url(image.png);
+  background: linear-gradient(180deg, #000000 -73.06%, rgba(0, 0, 0, 0) 100%), url(image.png);
 }
 
 .promo__title p {

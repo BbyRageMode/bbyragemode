@@ -1,9 +1,17 @@
-$(document).ready(function(){
-    $(".single-itemCarousel").owlCarousel({
-        items: 1,
-        dots: true,
-        dotsEach: true,
-        dotClass: "customDots",
-        margin: 10,
-    });
+$(document).ready(function () {
+  $(".single-itemCarousel").owlCarousel({
+    items: 1,
+    dots: true,
+    dotsEach: true,
+    dotClass: "customDots",
+    margin: 10,
   });
+
+  $(".product-carousel").owlCarousel({
+    items: 1,
+    dots: true,
+    dotsEach: true,
+    dotClass: "customDots",
+    margin: 10,
+  });
+});
