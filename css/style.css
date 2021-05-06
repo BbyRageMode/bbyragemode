@@ -579,6 +579,14 @@ main {
   margin: 16px 0px;
 }
 
+.carousel-box__header .title__text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #223263;
+}
+
 .carousel-box__header .title__link {
   color: #40bfff;
 }
@@ -1098,4 +1106,128 @@ main {
   line-height: 180%;
   letter-spacing: 0.5px;
   color: #9098b1;
+}
+
+.product-reting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+
+.product-reting__number {
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #9098b1;
+  margin: 0 3px;
+}
+
+.product-reting__quantity {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #9098b1;
+}
+
+.review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 23px;
+}
+
+.review__profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review__text {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 180%;
+  letter-spacing: 0.5px;
+  color: #9098b1;
+  margin-bottom: 16px;
+}
+
+.review__photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+
+.review__img {
+  margin-right: 12px;
+}
+
+.review__date {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #9098b1;
+}
+
+.profile {
+  margin-bottom: 16px;
+}
+
+.profile__photo {
+  width: 48px;
+  height: 48px;
+  margin-right: 16px;
+}
+
+.profile__name {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #223263;
+  margin-bottom: 4px;
+}
+
+.bigButton {
+  margin-top: 21px;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 16px;
+  background: #40bfff;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  -webkit-box-shadow: 0px 10px 30px rgba(64, 191, 255, 0.24);
+          box-shadow: 0px 10px 30px rgba(64, 191, 255, 0.24);
+  border-radius: 5px;
 }
