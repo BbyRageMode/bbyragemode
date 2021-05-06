@@ -761,3 +761,42 @@ main {
 .categories input:checked ~ .color-input:after {
   display: block;
 }
+
+.specification {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  &__line {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 12px;
+    margin-bottom: 16px;
+  }
+  &__left {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 180%;
+    letter-spacing: 0.5px;
+    color: #223263;
+    align-items: center;
+  }
+  &__right {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 180%;
+
+    letter-spacing: 0.5px;
+    color: #9098b1;
+    word-wrap: break-word;
+    text-align: right;
+    width: 171px;
+  }
+  &__aboutItem {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 180%;
+    letter-spacing: 0.5px;
+    color: #9098b1;
+  }
+}
