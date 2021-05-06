@@ -942,8 +942,8 @@ main {
   color: #223263;
 }
 
-.categoryes,
-.carousel__categoryes {
+.categories,
+.carousel__categories {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -954,13 +954,13 @@ main {
   height: 48px;
 }
 
-.categoryes::-webkit-scrollbar,
-.carousel__categoryes::-webkit-scrollbar {
+.categories::-webkit-scrollbar,
+.carousel__categories::-webkit-scrollbar {
   display: none;
 }
 
-.categoryes__item,
-.carousel__categoryes__item {
+.categories__item,
+.carousel__categories__item {
   min-width: 48px;
   min-height: 48px;
   display: -webkit-box;
@@ -980,8 +980,8 @@ main {
   margin-right: 16px;
 }
 
-.categoryes__item.active,
-.carousel__categoryes__item.active {
+.categories__item.active,
+.carousel__categories__item.active {
   background: #ffffff;
   border: 1px solid #40bfff;
   -webkit-box-sizing: border-box;
@@ -989,12 +989,58 @@ main {
   border-radius: 66px;
 }
 
-.categoryes__size,
-.carousel__categoryes__size {
+.categories__size,
+.carousel__categories__size {
   font-weight: bold;
   font-size: 14px;
   line-height: 150%;
   text-align: center;
   letter-spacing: 0.5px;
   color: #223263;
+}
+
+.categories__color-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 66px;
+  cursor: pointer;
+  position: relative;
+  margin-right: 16px;
+}
+
+.color-input {
+  width: 48px;
+  height: 48px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.color-input::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.color-input:checked ~ .color-label {
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+.categories input:checked ~ .color-input:after {
+  display: block;
 }
