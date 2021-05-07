@@ -88,6 +88,8 @@ h6 {
 
 body {
   font-family: "Poppins", sans-serif;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 main {
@@ -114,7 +116,6 @@ main {
 
 .main-container {
   padding: 0 16px;
-  height: 100%;
   width: 100%;
 }
 
@@ -1207,6 +1208,7 @@ main {
 
 .bigButton {
   margin-top: 21px;
+  margin-bottom: 16px;
 }
 
 .button {
@@ -1230,4 +1232,95 @@ main {
   -webkit-box-shadow: 0px 10px 30px rgba(64, 191, 255, 0.24);
           box-shadow: 0px 10px 30px rgba(64, 191, 255, 0.24);
   border-radius: 5px;
+}
+
+.reviewCarousel {
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reviewCarousel::-webkit-scrollbar {
+  display: none;
+}
+
+.btn-element {
+  margin-right: 12px;
+}
+
+.btn-element__allReview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  width: 100%;
+  padding: 16px;
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #40bfff;
+  background: rgba(64, 191, 255, 0.1);
+  border-radius: 5px;
+}
+
+.btn-element__reviewBtn {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 16px;
+  max-height: 50px;
+  border: 1px solid #ebf0ff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.btn-element__star {
+  margin-right: 10px;
+}
+
+.btn-element__soloStar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-element__number {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #9098b1;
+  margin-top: 1px;
 }
