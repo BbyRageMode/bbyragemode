@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Review Product</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__left">
+        <a href="/Reviews.html" class="header__back"
+          ><svg
+            class="header__back"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15 18L9 12L15 6"
+              stroke="#9098B1"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <div class="header__title">Write Review</div>
+        </a>
+      </div>
+      <div class="header__actions">
+        <ul class="top_nav">
+          <li class="top_nav__item">
+            <a href="#" class="itemBtn"> </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="main-container">
+      <div class="stars-review">
+        <div class="stars-review__title">
+          Please write Overall level of satisfaction with your shipping /
+          Delivery Service
+        </div>
+        <div class="stars-review__stars value-stars">
+          <div class="value-stars__wrapper">
+            <span class="value-stars__value-star"
+              ><svg
+                class="value-stars__rating-star"
+                width="32"
+                height="29"
+                viewBox="0 0 32 29"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 0L21.3227 8.67398L31.2169 11.0557L24.6123 18.7983L25.4046 28.9443L16 25.0555L6.59544 28.9443L7.38775 18.7983L0.783095 11.0557L10.6773 8.67398L16 0Z"
+                  fill="#EBF0FF"
+                />
+              </svg>
+            </span>
+            <span class="value-stars__value-star"
+              ><svg
+                class="value-stars__rating-star"
+                width="32"
+                height="29"
+                viewBox="0 0 32 29"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 0L21.3227 8.67398L31.2169 11.0557L24.6123 18.7983L25.4046 28.9443L16 25.0555L6.59544 28.9443L7.38775 18.7983L0.783095 11.0557L10.6773 8.67398L16 0Z"
+                  fill="#EBF0FF"
+                />
+              </svg>
+            </span>
+            <span class="value-stars__value-star"
+              ><svg
+                class="value-stars__rating-star"
+                width="32"
+                height="29"
+                viewBox="0 0 32 29"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 0L21.3227 8.67398L31.2169 11.0557L24.6123 18.7983L25.4046 28.9443L16 25.0555L6.59544 28.9443L7.38775 18.7983L0.783095 11.0557L10.6773 8.67398L16 0Z"
+                  fill="#EBF0FF"
+                />
+              </svg>
+            </span>
+            <span class="value-stars__value-star"
+              ><svg
+                class="value-stars__rating-star"
+                width="32"
+                height="29"
+                viewBox="0 0 32 29"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 0L21.3227 8.67398L31.2169 11.0557L24.6123 18.7983L25.4046 28.9443L16 25.0555L6.59544 28.9443L7.38775 18.7983L0.783095 11.0557L10.6773 8.67398L16 0Z"
+                  fill="#EBF0FF"
+                />
+              </svg>
+            </span>
+            <span class="value-stars__value-star touched"
+              ><svg
+                class="value-stars__rating-star"
+                width="32"
+                height="29"
+                viewBox="0 0 32 29"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 0L21.3227 8.67398L31.2169 11.0557L24.6123 18.7983L25.4046 28.9443L16 25.0555L6.59544 28.9443L7.38775 18.7983L0.783095 11.0557L10.6773 8.67398L16 0Z"
+                  fill="#EBF0FF"
+                />
+              </svg>
+            </span>
+          </div>
+
+          <div class="stars-review__value">1/5</div>
+        </div>
+      </div>
+      <div class="yourReview">
+        <div class="yourReview__title">Write Your Review</div>
+        <textarea
+          class="yourReview__textReview"
+          placeholder="Write your review here"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <div class="photo-review">
+        <div class="photo-review__title">Add Photo</div>
+        <div class="photo-review__addPhoto">
+          <div class="preview-photo">
+            <img src="/img/ReviewProduct/WriteReview/preview.png" alt="" />
+          </div>
+          <label class="addPhoto-btn" for="photo-review">
+            <input id="photo-review" type="file" />
+            <span></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="bigButton">
+        <button class="button">Add review</button>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

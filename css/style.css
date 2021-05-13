@@ -30,7 +30,6 @@ aside {
 
 html,
 body {
-  height: 100%;
   width: 100%;
   font-size: 100%;
   line-height: 1;
@@ -88,8 +87,6 @@ h6 {
 
 body {
   font-family: "Poppins", sans-serif;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
 }
 
 main {
@@ -98,7 +95,7 @@ main {
 
 .container {
   padding: 0 16px;
-  height: 100%;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1323,4 +1320,195 @@ main {
   letter-spacing: 0.5px;
   color: #9098b1;
   margin-top: 1px;
+}
+
+.stars-review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 16px;
+}
+
+.stars-review__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #223263;
+  margin-bottom: 16px;
+}
+
+.stars-review__value {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #9098b1;
+  margin-left: 16px;
+}
+
+.value-stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ebf0ff;
+}
+
+.value-stars__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.value-stars__value-star:hover {
+  color: #f7db8e;
+}
+
+.value-stars__value-star:hover ~ .value-stars__value-star {
+  color: #f7db8e;
+}
+
+.value-stars__rating-star path {
+  fill: currentColor;
+}
+
+.touched {
+  color: #ffc833;
+}
+
+.yourReview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 24px;
+}
+
+.yourReview__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #223263;
+  margin-bottom: 12px;
+}
+
+.yourReview__textReview {
+  resize: none;
+  border: 1px solid #ebf0ff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  background: #ffffff !important;
+  outline: none;
+  height: 160px;
+  width: 343px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 180%;
+  letter-spacing: 0.5px;
+  padding: 16px 16px 0 16px;
+}
+
+.yourReview__textReview:focus {
+  border: 1px solid #40bfff;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 180%;
+  letter-spacing: 0.5px;
+  color: #9098b1;
+}
+
+.photo-review__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #223263;
+  margin-bottom: 12px;
+}
+
+.photo-review__addPhoto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.photo-review__addPhoto .preview-photo {
+  margin-right: 12px;
+}
+
+.photo-review__addPhoto input[type="file"] {
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.photo-review__addPhoto label {
+  width: 72px;
+  height: 72px;
+  cursor: pointer;
+  display: block;
+  border: 1px solid #ebf0ff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  position: relative;
+}
+
+.photo-review__addPhoto label span {
+  display: block;
+  width: 14px;
+  height: 2px;
+  background: #9098b1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 8px;
+}
+
+.photo-review__addPhoto label span::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 14px;
+  background: #9098b1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 8px;
 }
