@@ -1126,6 +1126,51 @@ main {
 }
 
 // Notification
+// ======================
 
 .list {
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 19px 0;
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+  &__img {
+    margin-right: 16px;
+  }
+  &__icon path {
+    // stroke: #40bfff;
+  }
+  &__text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    color: #223263;
+  }
+  &__right {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__notifi {
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.5px;
+
+    background: #fb7181;
+    border-radius: 66px;
+    color: #ffffff;
+
+    padding: 3px 7px;
+  }
 }
