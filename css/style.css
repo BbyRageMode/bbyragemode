@@ -1579,6 +1579,10 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .offer-list__header {
@@ -1607,6 +1611,10 @@ main {
   color: #223263;
 }
 
+.offer-list__body {
+  margin-left: 34px;
+}
+
 .offer-list__text {
   margin-bottom: 8px;
   font-style: normal;
@@ -1618,6 +1626,57 @@ main {
 }
 
 .offer-list__subText {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #223263;
+}
+
+.feed-list__item {
+  margin: 16px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feed-list__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.feed-list__img {
+  margin-right: 12px;
+}
+
+.feed-list__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+}
+
+.feed-list__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #223263;
+}
+
+.feed-list__text {
+  margin-bottom: 8px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 180%;
+  letter-spacing: 0.5px;
+  color: #9098b1;
+}
+
+.feed-list__subText {
   font-weight: normal;
   font-size: 10px;
   line-height: 150%;

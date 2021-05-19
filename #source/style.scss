@@ -1177,8 +1177,56 @@ main {
 
 // Offer page
 // =============
-
 .offer-list {
+  &__item {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  &__header {
+    display: flex;
+    margin-bottom: 8px;
+  }
+  &__img {
+    margin-right: 12px;
+  }
+  &__icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 5px;
+  }
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    color: #223263;
+  }
+  &__body {
+    margin-left: 34px;
+  }
+  &__text {
+    margin-bottom: 8px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 180%;
+    letter-spacing: 0.5px;
+    color: #9098b1;
+  }
+  &__subText {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    color: #223263;
+  }
+}
+
+// Feed page
+// ============
+.feed-list {
   &__item {
     margin: 16px 0;
     display: flex;
@@ -1222,6 +1270,3 @@ main {
     color: #223263;
   }
 }
-
-// Feed page
-// ============
