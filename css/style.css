@@ -430,6 +430,7 @@ main {
   padding: 12px 16px 12px 40px;
   font-size: 12px;
   line-height: 180%;
+  width: 263px;
 }
 
 .header .header__actions {
@@ -1682,4 +1683,31 @@ main {
   line-height: 150%;
   letter-spacing: 0.5px;
   color: #223263;
+}
+
+.exploreList .carousel-category {
+  margin: 0;
+}
+
+.exploreList__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #223263;
+  margin: 16px 0 12px 0;
+}
+
+.exploreList__body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (70px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 70px);
+  grid-gap: 21px;
+}
+
+.exploreList__item {
+  height: 108px;
+  width: 70px;
 }
