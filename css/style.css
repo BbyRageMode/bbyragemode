@@ -430,10 +430,20 @@ main {
   padding: 12px 16px 12px 40px;
   font-size: 12px;
   line-height: 180%;
+  letter-spacing: 0.5px;
   width: 263px;
 }
 
+.header .header__search .search:focus {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 180%;
+  letter-spacing: 0.5px;
+  color: #223263;
+}
+
 .header .header__actions {
+  margin-left: 8px;
   height: 47px;
 }
 
@@ -473,7 +483,6 @@ main {
   position: absolute;
   top: 2px;
   right: 0px;
-  display: none;
 }
 
 .itemBtn__notification {
@@ -802,10 +811,6 @@ main {
   position: relative;
   width: 75px;
   height: 59px;
-}
-
-.bottom-menu__alert {
-  display: none;
 }
 
 .bottom-menu__alert span {
@@ -1722,4 +1727,35 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.result-sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 16px;
+}
+
+.result-sort__left {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 180%;
+  letter-spacing: 0.5px;
+  color: #223263;
+  opacity: 0.5;
+}
+
+.result-sort__right {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 180%;
+  text-align: right;
+  letter-spacing: 0.5px;
+  color: #223263;
 }
