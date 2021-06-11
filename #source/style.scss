@@ -1300,4 +1300,11 @@ main {
     height: 108px;
     width: 70px;
   }
+  & .carousel-category {
+    &__title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
